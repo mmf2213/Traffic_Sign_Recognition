@@ -1,67 +1,164 @@
-🚦 Traffic Sign Recognition System
+# 🚦 Traffic Sign Recognition System
 
-This is a Traffic Sign Recognition system built using Convolutional Neural Networks (CNN) and OpenCV. The system allows users to upload an image of a traffic sign and predicts its class using a trained deep-learning model.
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-orange)
+![Flask](https://img.shields.io/badge/Flask-WebApp-lightgrey)
+![OpenCV](https://img.shields.io/badge/OpenCV-ImageProcessing-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-📌 Features
-✅ Real-time Image Upload: Upload images and get instant predictions
-✅ CNN Model: Trained on traffic sign datasets for multi-class classification
-✅ Flask-based UI: Clean and responsive interface using Bootstrap 5
-✅ OpenCV Processing: Efficient image preprocessing and handling
-✅ Fast & Accurate Predictions
-📷 Output Screenshots
-🔹 Input Image
+---
 
-🔹 Prediction Output
+## 📌 Overview
 
-📊 Demo
-Input	Prediction
+This is a **Traffic Sign Recognition System** built using **Convolutional Neural Networks (CNN)** and **OpenCV**.  
+The system allows users to upload an image of a traffic sign and predicts its class using a trained deep learning model via a **Flask web interface**.
 
-	
-🚀 Installation & Setup
-🔹 1. Create and Activate Virtual Environment (Optional but Recommended)
+---
+
+## 📌 Features
+
+- ✅ Real-time Image Upload  
+- ✅ CNN-based Multi-class Classification  
+- ✅ Flask Web Interface  
+- ✅ OpenCV Image Preprocessing  
+- ✅ Fast & Accurate Predictions  
+
+---
+
+## 📷 Output Screenshots
+
+### 🔹 Input Image
+![Input Image](./static/screenshots/input.png)
+
+### 🔹 Prediction Output
+![Output Image](./static/screenshots/output.png)
+
+---
+
+## 📊 Demo
+
+| Input | Prediction |
+|------|-----------|
+| ![](./static/screenshots/input.png) | ![](./static/screenshots/output.png) |
+
+---
+
+## 📈 Model Performance
+
+- 🎯 **Accuracy:** ~95% (depending on dataset)  
+- 📉 **Loss:** Low training & validation loss  
+- ⚡ **Inference Time:** Fast (real-time prediction)  
+
+---
+
+## ⚙️ Tech Stack
+
+- 🔹 **Programming Language:** Python 3.8+  
+- 🔹 **Deep Learning:** TensorFlow / Keras (CNN)  
+- 🔹 **Backend:** Flask  
+- 🔹 **Image Processing:** OpenCV  
+- 🔹 **Frontend:** HTML, CSS, Bootstrap 5  
+- 🔹 **Libraries:** NumPy, Pandas, Scikit-learn  
+
+---
+
+## 🚀 Installation & Setup
+
+### 🔹 1. Create Virtual Environment
+```bash
 python -m venv venv
-Activate Virtual Environment:
+```
 
-Windows
+### 🔹 2. Activate Environment
 
+**Windows**
+```bash
 venv\Scripts\activate
+```
 
-Mac/Linux
-
+**Mac/Linux**
+```bash
 source venv/bin/activate
-🔹 2. Install Dependencies
+```
+
+### 🔹 3. Install Dependencies
+```bash
 pip install -r requirements.txt
-🔹 3. Train the Model (If not already trained)
+```
+
+### 🔹 4. Train Model
+```bash
 python model/train_model.py
+```
 
-This will train the CNN model and save it as:
-
-model/traffic_sign_model.h5
-🔹 4. Run the Flask Application
+### 🔹 5. Run Application
+```bash
 python app.py
-🔹 5. Open in Browser
+```
 
-Once the server starts, open:
-
+### 🔹 6. Open Browser
+```bash
 http://127.0.0.1:5000/
+```
 
-Upload an image to get the predicted traffic sign.
+---
 
-⚙️ Technologies Used
-🔹 Python 3.8+
-🔹 Flask
-🔹 TensorFlow / Keras
-🔹 OpenCV
-🔹 Bootstrap 5
-🔹 NumPy, Pandas, Scikit-learn
+## 📂 Dataset
 
-   👨‍💻 Author
-Mrunal Fattepurkar
+The dataset is included in this repository.
 
-🤝 Contributing
+Structure:
+- `dataset/Indian-Traffic-Sign-Dataset/Images/`
+- Contains folders **0 to 58**, each representing a traffic sign class.
 
-Contributions are welcome! Feel free to improve the project and submit changes.
+Each folder contains images of that specific traffic sign category.
 
-⚠️ License
+---
+
+## 📁 Project Structure
+
+```
+Traffic_Sign_Recognition/
+│── app.py
+│── requirements.txt
+│── README.md
+│── .gitignore
+│── dataset/
+│   └── Indian-Traffic-Sign-Dataset/
+│       ├── Images/
+│       │   ├── 0/
+│       │   ├── 1/
+│       │   ├── ...
+│       │   └── 58/
+│       └── traffic_sign.csv
+│── model/
+│   ├── train_model.py
+│   └── traffic_sign_model.h5
+│── static/
+│   └── screenshots/
+│       ├── input.png
+│       └── output.png
+│── uploads/
+│── templates/
+│   └── index.html
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork and improve the project.
+
+---
+
+## ⚠️ License
 
 This project is open-source and free to use.
+
+---
+
+## 👨‍💻 Author
+
+**Mrunal Fattepurkar** 
+
+---
